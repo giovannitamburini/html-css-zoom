@@ -1,0 +1,103 @@
+
+#background {
+    background-color: black;ù
+    position: relative;
+}
+
+#grid {
+    width: 6vw;
+    height: 2vh;
+    position: fixed;
+    top: 1vh;
+    right: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#grid #speaker-view {
+    height: 100%;
+    width: 75%;
+    background-color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#grid #speaker-view a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.5vw;
+}
+
+#grid #full-screen {
+    height: 100%;
+    width: 20%;
+    background-color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 5px;
+}
+
+#grid #full-screen a {
+    font-size: 0.8vh;
+}
+
+#grid #full-screen a img{
+    height: 0.8vw;
+}
+
+#container {
+    height: 100vh;
+    width: calc(100% - 9%);
+    margin: 0 auto;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container-img {
+    width: calc(100% / 7);
+    min-width: 100px;
+    /* height: calc(100% / 5 - 1vh); */
+    min-height: 50px;
+    margin-bottom: 1vh;
+    padding: 1vh;
+    position: relative;
+    
+}
+.single-partecipant {
+    position: absolute;
+    bottom: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 20px; */
+    padding-top: 0.3vh;
+    padding-right: 0.2vw;
+    padding-bottom: 0.3vh;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.single-partecipant a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.7vw;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+/* #commands {
+    height: 80px;
+    width: 100%;
+    background-color: #222222;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+} */
