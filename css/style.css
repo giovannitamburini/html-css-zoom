@@ -9,8 +9,8 @@ body {
 }
 
 #grid {
-    width: 6vw;
-    height: 2vh;
+    width: 9vw;
+    height: 2.5vh;
     position: fixed;
     top: 1vh;
     right: 1vw;
@@ -32,7 +32,8 @@ body {
 #grid #speaker-view a{
     color: white;
     text-decoration: none;
-    font-size: 0.5vw;
+    font-size: 0.8vw;
+    padding:0 0.3vw;
 }
 
 #grid #full-screen {
@@ -50,11 +51,11 @@ body {
 }
 
 #grid #full-screen a img{
-    height: 0.8vw;
+    height: 2vh;
 }
 
 #container {
-    height: calc(100vh - 6vh);
+    height: calc(100vh - 7vh);
     width: calc(100% - 9%);
     margin: 0 auto;
     padding-top: 7vh;
@@ -75,7 +76,7 @@ body {
 }
 .single-partecipant {
     position: absolute;
-    bottom: 1vh;
+    bottom: 0.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +99,7 @@ img {
 }
 
 #commands {
-    height: 6vh;
+    height: 8vh;
     width: 100%;
     background-color: #222222;
     position: fixed;
@@ -112,22 +113,25 @@ img {
 #commands-left {
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .button-container {
     display: flex;
     align-items: center;
-    padding: 0 0.1vw;
+    padding: 0 0.1vh;
 }
 
 .button {
     text-align: center;
-    padding: 0.5vh;
+    padding:0 0.5vh;
 }
 
 .button a {
     text-decoration: none;
     color: white;
+    font-size: 2.5vh;
+    padding: 0;
 }
 
 .button a div {
@@ -137,12 +141,19 @@ img {
 .button-option a{
     text-decoration: none;
     color: white;
+    font-size: 2vh;
 }
 
 #commands-center {
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+#rotate {
+    transform: rotate(270deg);
+    font-size: 2vh;
+    padding-bottom: 0.4vh;
 }
 
 #commands-right {
@@ -157,4 +168,6 @@ img {
 #commands-right a{
     text-decoration: none;
     color: red;
+    font-size: 1.5vh;
+    padding:0 1vw;
 }
