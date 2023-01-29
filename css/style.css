@@ -1,7 +1,11 @@
+body {
+    /* background-color: black; */
+}
 
 #background {
-    background-color: black;ù
+    background-color: black;
     position: relative;
+    overflow: auto;
 }
 
 #grid {
@@ -22,7 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 0.4vh;
 }
 
 #grid #speaker-view a{
@@ -38,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    border-radius: 5px;
+    border-radius: 0.4vh;
 }
 
 #grid #full-screen a {
@@ -50,13 +54,14 @@
 }
 
 #container {
-    height: 100vh;
+    height: calc(100vh - 6vh);
     width: calc(100% - 9%);
     margin: 0 auto;
-    padding-top: 10vh;
+    padding-top: 7vh;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    overflow-y: auto;
 }
 
 .container-img {
@@ -65,9 +70,8 @@
     /* height: calc(100% / 5 - 1vh); */
     min-height: 50px;
     margin-bottom: 1vh;
-    padding: 1vh;
+    padding: 0.5vh;
     position: relative;
-    
 }
 .single-partecipant {
     position: absolute;
@@ -93,11 +97,64 @@ img {
     width: 100%;
 }
 
-/* #commands {
-    height: 80px;
+#commands {
+    height: 6vh;
     width: 100%;
     background-color: #222222;
     position: fixed;
     bottom: 0;
     left: 0;
-} */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#commands-left {
+    display: flex;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    padding: 0 0.1vw;
+}
+
+.button {
+    text-align: center;
+    padding: 0.5vh;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.button a div {
+    font-size: 1.5vh;
+}
+
+.button-option a{
+    text-decoration: none;
+    color: white;
+}
+
+#commands-center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#commands-right {
+    height: 100%;
+    background-color: #4a4a4a;
+    padding: 0 0.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#commands-right a{
+    text-decoration: none;
+    color: red;
+}
